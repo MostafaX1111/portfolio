@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omar Ahmed Hassan | Embedded Software Engineer</title>
+<meta name="description" content="Portfolio of Omar Ahmed Hassan, Embedded Software Engineer in automotive software testing, Cairo, Egypt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="logo" href="#top">OH<span>.</span></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false">Menu</button>
+  <nav id="menu">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+    <a href="#skills">Skills</a><a href="#contact" class="hire">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hello"><i></i> Open to new opportunities</p>
+      <h1>Hi, I'm <span class="grad">Omar Ahmed Hassan</span></h1>
+      <p class="typed">I am a <b id="typed"></b><span class="cursor">|</span></p>
+      <p class="lead">Automotive software testing on a Mercedes-Benz project, and embedded systems in C on ARM and AVR. I make software that runs inside cars behave.</p>
+      <div class="actions">
+        <a class="btn solid" href="#projects">See my work</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+        <a class="icon" href="https://github.com/OmarSaudiy" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a class="icon" href="https://linkedin.com/in/omarsaudiy" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="ring"></div>
+      <img class="photo" src="omar.png" alt="Portrait of Omar Ahmed Hassan" width="420" height="420">
+      <span class="chip c1">C / C++</span>
+      <span class="chip c2">AUTOSAR</span>
+      <span class="chip c3">CAN · LIN</span>
+      <span class="chip c4">Python</span>
+    </div>
+  </section>
+
+  <section class="stats reveal">
+    <div><b data-n="4">0</b><span>Rank in my class (B.Sc. honors)</span></div>
+    <div><b data-n="83.44" data-d="2">0</b><span>Overall grade, percent</span></div>
+    <div><b data-n="5">0</b><span>Embedded projects built</span></div>
+    <div><b data-n="6">0</b><span>Diplomas and training programs</span></div>
+  </section>
+
+  <section id="about" class="block reveal">
+    <h2>About <span class="grad">me</span></h2>
+    <div class="cols">
+      <p>I graduated in Electrical Engineering (Communication &amp; Electronics) from Al-Azhar University and finished 4th in my class. Since December 2023 I have worked at eJad as a software testing engineer.</p>
+      <p>I keep learning on the side: AUTOSAR, ARM Cortex-M internals, embedded Linux, CAN and LIN. I like work where one careful detail decides whether a system behaves.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="block reveal">
+    <h2>My <span class="grad">journey</span></h2>
+    <ol class="timeline">
+      <li><time>Dec 2023 – Present</time><h3>Embedded Software Engineer, eJad</h3>
+        <p>Mercedes-Benz project: software releases, BROP testing, unit (SWE.4), integration (SWE.5) and system (SWE.6) testing.</p>
+        <p class="tags"><em>CANoe</em><em>VectorCAST</em><em>vTestStudio</em><em>DiVa</em><em>NEST</em><em>NTS</em><em>CAPL</em><em>Python</em><em>Git</em><em>SVN</em></p></li>
+      <li><time>Sep 2022 – Jul 2023</time><h3>Valeo Graduation Project Program</h3>
+        <p>Vehicle-to-Vehicle collision avoidance on embedded Linux. Graded Excellent.</p></li>
+      <li><time>Mar 2023 – May 2023</time><h3>Valeo Techie Fellowship</h3>
+        <p>Industrial automotive embedded software training offered by Valeo.</p></li>
+      <li><time>Oct 2018 – Jun 2023</time><h3>B.Sc. Electrical Engineering, Al-Azhar University</h3>
+        <p>Very good with honors, 83.44%. Second-highest performance among peers in my 3rd and 4th years.</p></li>
+    </ol>
+  </section>
+
+  <section id="projects" class="block reveal">
+    <h2>Featured <span class="grad">projects</span></h2>
+    <div class="projects">
+      <article class="card big tilt"><span class="badge">Graduation project</span><h3>V2V Collision Avoidance</h3>
+        <p>Vehicles exchange data over V2V communication to avoid collisions, running on embedded Linux with Valeo.</p>
+        <a href="https://github.com/OmarSaudiy" target="_blank" rel="noopener">View on GitHub</a></article>
+      <article class="card tilt"><h3>Door Locker Security</h3><p>Password door unlock with keypad, LCD, UART, I2C, EEPROM, buzzer and motor.</p><span class="tech">ATmega32</span></article>
+      <article class="card tilt"><h3>Fan Speed Controller</h3><p>Fan speed follows temperature using ADC, PWM and an LM35 sensor.</p><span class="tech">ATmega32</span></article>
+      <article class="card tilt"><h3>Distance Measuring</h3><p>Ultrasonic distance measurement shown live on an LCD.</p><span class="tech">ATmega32</span></article>
+      <article class="card tilt"><h3>Stopwatch</h3><p>Timer and external interrupts driving 7-segment displays.</p><span class="tech">ATmega32</span></article>
+    </div>
+  </section>
+
+  <section id="skills" class="block reveal">
+    <h2>Tech <span class="grad">stack</span></h2>
+    <div class="bars">
+      <div><label>Embedded C / C++</label><i data-w="90"></i></div>
+      <div><label>Automotive testing (Vector tools)</label><i data-w="92"></i></div>
+      <div><label>CAN / LIN / AUTOSAR</label><i data-w="85"></i></div>
+      <div><label>CAPL and Python scripting</label><i data-w="82"></i></div>
+      <div><label>ARM Cortex-M / AVR</label><i data-w="80"></i></div>
+      <div><label>Embedded Linux</label><i data-w="65"></i></div>
+    </div>
+    <p class="tags big"><em>DaVinci</em><em>DTS Monaco</em><em>OTX</em><em>Keil</em><em>Eclipse</em><em>Proteus</em><em>RTOS</em><em>MISRA C</em><em>Linux</em><em>Git</em><em>Arabic native</em><em>English B2</em></p>
+  </section>
+
+  <section id="contact" class="block contact reveal">
+    <h2>Let's <span class="grad">talk</span></h2>
+    <p>Got an automotive or embedded project? Send me a message.</p>
+    <a class="mail" href="mailto:omarsaudiy@gmail.com">omarsaudiy@gmail.com</a>
+    <div class="actions center">
+      <a class="btn ghost" href="tel:+201141563470">+20 114 156 3470</a>
+      <a class="btn ghost" href="https://github.com/OmarSaudiy" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://linkedin.com/in/omarsaudiy" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+<footer>© <span id="year">2026</span> Omar Ahmed Hassan · Nasr City, Cairo</footer>
+<script src="script.js"></script>
+</body>
+</html>
